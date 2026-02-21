@@ -1,0 +1,158 @@
+/* =====================
+   Reset
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  background: #f0fff4;
+}
+
+/* =====================
+   Navbar
+===================== */
+.navbar {
+  background: #cfe8d5;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.navbar .menu i {
+  font-size: 1.5rem;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color: #2f4f4f;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.navbar .menu a:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+.navbar .menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu a:hover::after {
+  width: 100%;
+}
+
+/* =====================
+   Container
+===================== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;   /* ลด padding กันล้น */
+  text-align: center;
+}
+
+.container h1 {
+  color: #2f4f4f;
+  margin-bottom: 10px;
+}
+
+.container .desc {
+  color: #2f4f4f;
+  margin-bottom: 30px;
+}
+
+/* =====================
+   Content Layout
+===================== */
+.content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* =====================
+   Calculator
+===================== */
+.calculator {
+  background: #cfcfcf;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator h2 {
+  margin-bottom: 20px;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 12px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.calculator button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #2f4f4f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.calculator button:hover {
+  background: #1f3d2b;
+}
+
+.calculator .output {
+  margin-top: 20px;
+  background: #e8e8e8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* =====================
+   Example Image
+===================== */
+.example-img img {
+  width: 100%;        /* แก้จาก 620px */
+  max-width: 670px;   /* จำกัดไม่ให้ใหญ่เกิน */
+  border-radius: 12px;
+  border: 2px solid #2f4f4f;
+  display: block;
+}

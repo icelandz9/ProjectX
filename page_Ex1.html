@@ -1,0 +1,62 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Example 1 Mesh Equation</title>
+
+  <link rel="stylesheet" href="page_Ex1.css" />
+  <link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="menu">
+        <a href="page_main.html"><i class="fas fa-home"></i></a>
+        <a href="page_Ex1.html">Example 1</a>
+        <a href="page_Ex2.html">Example 2</a>
+        <a href="page_Ex3.html">Example 3</a>
+        <a href="page_team.html">Team member</a>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <section class="container">
+      <h1>Example 1 <br> นับจำนวนสมการเมช</h1>
+
+      <p class="desc">
+        จุดประสงค์ของตัวอย่างนี้คือยังไม่คำนวณกระแส
+        แต่สอนวิธีหาว่าต้องตั้งสมการเมชกี่สมการ
+        โดยนับจำนวนสาขาและจำนวนจุดต่อหลัก แล้วใช้สูตรคำนวณ
+      </p>
+
+      <div class="content">
+        <!-- Calculator -->
+        <div class="calculator">
+          <h2>โปรแกรมคำนวณ</h2>
+
+          <input type="number" id="branch" placeholder="จำนวนสาขา" />
+          <input type="number" id="node" placeholder="จำนวนจุดต่อหลัก" />
+
+          <button onclick="calculateMesh1()">คำนวณ</button>
+
+          <div class="output">
+            จำนวนสมการ = <span id="result">?</span>
+            สมการ
+          </div>
+        </div>
+
+        <!-- Example Image -->
+        <div class="example-img">
+          <img src="img_Example/Ex1.jpg" alt="example" class="box1" />
+        </div>
+      </div>
+    </section>
+
+    <script src="script_Ex1.js"></script>
+  </body>
+</html>

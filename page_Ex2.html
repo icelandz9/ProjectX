@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example 2 Mesh Equation</title>
+    <link rel="stylesheet" href="page_Ex2.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="menu">
+        <a href="page_main.html"><i class="fas fa-home"></i></a>
+        <a href="page_Ex1.html">Example 1</a>
+        <a href="page_Ex2.html">Example 2</a>
+        <a href="page_Ex3.html">Example 3</a>
+        <a href="page_team.html">Team member</a>
+      </div>
+    </nav>
+
+    <!-- Container -->
+    <section class="container">
+      <h1>Example 2 <br> วงจรเมชพื้นฐาน</h1>
+
+      <p class="desc">
+        วงจรนี้เป็นเมชพื้นฐาน 2 ลูป ประกอบด้วยแหล่งจ่าย 2 ตัว และตัวต้านทาน 3
+        ตัว โดยมีตัวต้านทานร่วม 1 ตัว (R₃) และไม่มีแหล่งจ่ายในลูปกลาง
+        จึงตั้งสมการกระแสได้ 2 ตัวแปร (I₁, I₂) มีระดับความยากง่าย
+        เหมาะสำหรับใช้สอนการตั้งสมการ KVL การวิเคราะห์กระแสร่วม
+        และการกำหนดเครื่องหมาย + −
+      </p>
+
+      <div class="content">
+        <!-- Calculator -->
+        <div class="calculator">
+          <h2>โปรแกรมคำนวณ</h2>
+
+          <div class="form_group">
+            <input type="number" id="r1" placeholder="R1 (Ω)" />
+            <input type="number" id="r2" placeholder="R2 (Ω)" />
+            <input type="number" id="r3" placeholder="R3 (Ω)" />
+          </div>
+
+          <div class="form_group">
+            <input type="number" id="E1" placeholder="E1 (V)" />
+            <input type="number" id="E2" placeholder="E2 (V)" />
+          </div>
+
+          <button onclick="calculateMesh2()">คำนวณ</button>
+
+          <div class="form_group_output">
+            <input type="text" id="current_1" placeholder="I1" />
+            <input type="text" id="current_2" placeholder="I2" />
+          </div>
+        </div>
+
+        <!-- Example Image -->
+        <div class="example-img">
+          <img src="img_Example/Ex2.jpg" alt="example" class="box1" />
+        </div>
+      </div>
+    </section>
+
+    <script src="script_Ex2.js"></script>
+  </body>
+</html>

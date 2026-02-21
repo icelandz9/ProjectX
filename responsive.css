@@ -1,0 +1,80 @@
+/* ===== TABLET (iPad) ===== */
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .container {
+    margin-top: 0rem;
+  }
+
+  .container h1 {
+    margin-top: 3rem;
+  }
+
+  .example-img img {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .calculator {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  .download-box {
+    margin-top: 60px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 18px;
+  }
+
+  .download-box h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 1.8rem;
+  }
+
+  .calculator {
+    padding: 20px;
+  }
+
+  .download-section {
+    flex-direction: column;
+    /* margin-bottom: 30px; */
+  }
+
+  .download-box .qr img {
+    width: 200px;
+    height: 200px;
+  }
+}
