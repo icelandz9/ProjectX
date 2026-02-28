@@ -1,111 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mesh Analysis</title>
+    <title>Mesh Analysis</title>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="sytle.css" />
-  <link rel="stylesheet" href="responsive.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="sytle.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="shortcut icon" href="img_Example/logo-swu.png" />
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-</head>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="menu">
+        <a href="index.html">
+          <i class="fas fa-home"></i>
+        </a>
+        <a href="page_Ex1.html">Example 1</a>
+        <a href="page_Ex2.html">Example 2</a>
+        <a href="page_Ex3.html">Example 3</a>
+        <a href="page_team.html">Team member</a>
+      </div>
+    </nav>
 
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar">
-    <div class="menu">
-      <a href="index.html">
-        <i class="fas fa-home"></i>
-      </a>
-      <a href="page_Ex1.html">Example 1</a>
-      <a href="page_Ex2.html">Example 2</a>
-      <a href="page_Ex3.html">Example 3</a>
-      <a href="page_team.html">Team member</a>
-    </div>
-  </nav>
-
-
-  <!-- ================= CONTENT ================= -->
-  <section class="container">
-
-    <!-- Title -->
-    <div class="text-in-web">
-      <h1>การจำลองการวิเคราะห์ กระแสแบบเมช</h1>
-    </div>
-
-    <div class="text-center">
-      <h1>การจำลองการวิเคราะห์</h1>
-      <h1>กระแสแบบเมช</h1>
-    </div>
-
-    <!-- Description -->
-    <p>
-      การวิเคราะห์วงจรด้วยวิธีกระแสแบบเมช (Mesh Analysis)
-      คือการวิเคราะห์วงจรไฟฟ้าในวงจรระนาบโดยใช้กฎแรงดันไฟฟ้า (KVL)
-      และกฎของโอห์ม โดยเริ่มจากการแบ่งวงจรออกเป็นลูปย่อยเรียกว่า "เมช"
-      แล้วสมมติกระแสไหลในทิศทางเดียวกันทุกเมช
-      จากนั้นจึงตั้งสมการแรงดันรวมรอบลูปให้เท่ากับศูนย์
-      เพื่อคำนวณหากระแสและแรงดันในวงจรได้ครบถ้วน
-    </p>
-
-
-    <!-- ================= DOWNLOAD SECTION ================= -->
-    <div class="download-section">
-
-      <!-- Left -->
-      <div class="download-box">
-        <div class="box1">
-          <h3>สไลด์ประกอบการนำเสนอ</h3>
-
-          <div class="qr">
-            <a
-              href="https://drive.google.com/drive/folders/1i2CcPfl7v5yumWqBwvBBsxJQOkNcR52-?usp=sharing"
-              target="_blank"
-            >
-              <img src="img_Example/qr1.png" alt="QR สไลด์" />
-            </a>
-
-            <a href="img_Example/Exsam2.pdf" download>
-              <p>Download สไลด์ประกอบการนำเสนอ</p>
-            </a>
-          </div>
-
-        </div>
+    <!-- ================= CONTENT ================= -->
+    <section class="container">
+      <!-- Title -->
+      <div class="text-in-web">
+        <h1>การจำลองการวิเคราะห์ กระแสแบบเมช</h1>
       </div>
 
-      <!-- Right -->
-      <div class="download-box">
-        <div class="box2">
-          <h3>เอกสารประกอบการนำเสนอ</h3>
-
-          <div class="qr">
-            <a
-              href="https://drive.google.com/drive/folders/1nMPreAa7wQIp-Db1WjNujhUW_W3Ll82I?usp=sharing"
-              target="_blank"
-            >
-              <img src="img_Example/qr2.png" alt="QR เอกสาร" />
-            </a>
-
-            <a href="img_Example/document.pdf" download>
-              <p>Download เอกสารประกอบการนำเสนอ</p>
-            </a>
-          </div>
-
-        </div>
+      <div class="text-center">
+        <h1>การจำลองการวิเคราะห์</h1>
+        <h1>กระแสแบบเมช</h1>
       </div>
 
-    </div>
-    <!-- =============== END DOWNLOAD =============== -->
+      <!-- Description -->
+      <p>
+        การวิเคราะห์วงจรด้วยวิธีกระแสแบบเมช (Mesh Analysis)
+        คือการวิเคราะห์วงจรไฟฟ้าในวงจรระนาบโดยใช้กฎแรงดันไฟฟ้า (KVL)
+        และกฎของโอห์ม โดยเริ่มจากการแบ่งวงจรออกเป็นลูปย่อยเรียกว่า "เมช"
+        แล้วสมมติกระแสไหลในทิศทางเดียวกันทุกเมช
+        จากนั้นจึงตั้งสมการแรงดันรวมรอบลูปให้เท่ากับศูนย์
+        เพื่อคำนวณหากระแสและแรงดันในวงจรได้ครบถ้วน
+      </p>
+      <br>
+      <!-- <h3>คำเตือนและคำแนะนำการใช้โปรแกรม</h3>
+      <p>
+        โปรแกรมคำนวณ Mesh Analysis ที่พัฒนาขึ้นในปัจจุบัน
+        ยังไม่สามารถรองรับการคำนวณได้กับทุกวงจรเมช
+        เนื่องจากสมการที่ใช้ภายในโปรแกรมถูกกำหนดขึ้นตามตัวอย่างโจทย์ที่นำมาใช้ทดสอบเท่านั้น
+        ดังนั้นโปรแกรมจึงสามารถคำนวณได้เฉพาะวงจรที่มีลักษณะเหมือนกับตัวอย่างที่แสดง
+        เช่น จำนวนเมชและค่าของตัวต้านทานที่กำหนดไว้ในระบบ อย่างไรก็ตาม
+        โปรแกรมนี้ยังสามารถพัฒนาต่อยอดได้
+        ในอนาคตมีแนวคิดที่จะปรับปรุงให้โปรแกรมสามารถสร้างสมการของ Mesh Analysis
+        ได้โดยอัตโนมัติจากข้อมูลของวงจร
+        เพื่อให้สามารถวิเคราะห์และคำนวณได้กับวงจรหลากหลายรูปแบบ
+        ไม่จำกัดเฉพาะตัวอย่างที่กำหนดไว้ในปัจจุบัน
+      </p> -->
 
-  </section>
+      <!-- ================= DOWNLOAD SECTION ================= -->
+      <div class="download-section">
+        <!-- Left -->
+        <div class="download-box">
+          <div class="box1">
+            <h3>สไลด์ประกอบการนำเสนอ</h3>
 
-</body>
+            <div class="qr">
+              <a
+                href="https://drive.google.com/file/d/1gtfni0ZBqjsfykpVJsoL9oQzwlkoMFRM/view?usp=sharing"
+                target="_blank"
+              >
+                <img src="img_Example/qr1.png" alt="QR สไลด์" />
+              </a>
+
+              <a href="img_Example/slide_compressed.pdf" download>
+                <p>Download สไลด์ประกอบการนำเสนอ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="download-box">
+          <div class="box2">
+            <h3>เอกสารประกอบการนำเสนอ</h3>
+
+            <div class="qr">
+              <a
+                href="https://drive.google.com/drive/folders/1nMPreAa7wQIp-Db1WjNujhUW_W3Ll82I?usp=sharing"
+                target="_blank"
+              >
+                <img src="img_Example/qr2.png" alt="QR เอกสาร" />
+              </a>
+
+              <a href="img_Example/document.pdf" download>
+                <p>Download เอกสารประกอบการนำเสนอ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============== END DOWNLOAD =============== -->
+    </section>
+  </body>
 </html>

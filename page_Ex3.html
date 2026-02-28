@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example 3 Mesh Equation</title>
     <link rel="stylesheet" href="page_Ex3.css" />
-    <link rel="stylesheet" href="responsive.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="shortcut icon" href="img_Example/logo-swu.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -26,7 +27,7 @@
 
     <!-- Container -->
     <section class="container">
-      <h1>Example 3 <br>วงจรเมชหลายลูปซับซ้อน</h1>
+      <h1>Example 3 <br />วงจรเมชหลายลูปซับซ้อน</h1>
 
       <p class="desc">
         วงจรตัวอย่างนี้เป็นวงจรเมชแบบ 3 ลูป ประกอบด้วยแหล่งจ่าย 4 ตัว
@@ -35,7 +36,7 @@
         และต้องใช้ทั้ง KVL ร่วมกับ KCL เพื่อหาค่ากระแสในแต่ละเมช.
       </p>
 
-      <div class="content"> 
+      <div class="content">
         <!-- Calculator -->
         <div class="calculator">
           <h2>โปรแกรมคำนวณ</h2>
@@ -57,10 +58,20 @@
 
           <button onclick="calculateMesh3()">คำนวณ</button>
 
+          <h3>ผลลัพธ์กระแส (Current)</h3>
           <div class="form_group_output">
-            <input type="text" id="current_1" placeholder="I1" />
-            <input type="text" id="current_2" placeholder="I2" />
-            <input type="text" id="current_3" placeholder="I3" />
+            <input type="text" id="current_1" placeholder="I1" readonly />
+            <input type="text" id="current_2" placeholder="I2" readonly />
+            <input type="text" id="current_3" placeholder="I3" readonly />
+          </div>
+
+          <h3>แรงดันตกคร่อม (Voltage Drop)</h3>
+          <div class="form_group_output">
+            <input type="text" id="v_r1" placeholder="V R1" readonly />
+            <input type="text" id="v_r2" placeholder="V R2" readonly />
+            <input type="text" id="v_r3" placeholder="V R3" readonly />
+            <input type="text" id="v_r4" placeholder="V R4" readonly />
+            <input type="text" id="v_r5" placeholder="V R5" readonly />
           </div>
         </div>
 
